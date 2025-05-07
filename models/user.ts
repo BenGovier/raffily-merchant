@@ -159,4 +159,5 @@ export class UserModel {
   }
 }
 
-export default User
+// Export both the interface and the model
+export default UserModel

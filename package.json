@@ -93,9 +93,9 @@
     "mongoose": "latest",
     "bcryptjs": "latest",
     "next-auth": "latest",
-    "uuid": "latest",
     "@stripe/react-stripe-js": "latest",
-    "@tanstack/react-table": "latest"
+    "@tanstack/react-table": "latest",
+    "uuid": "latest"
   },
   "devDependencies": {
     "@types/node": "^22",
