@@ -1,5 +1,4 @@
 import type React from "react"
-import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import Image from "next/image"
@@ -7,20 +6,20 @@ import Link from "next/link"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 
-export const metadata: Metadata = {
-  title: "Raffily - The Raffle Platform for Customer Retention",
-  description: "Run high-impact giveaways that increase loyalty, skyrocket engagement, and help convert your audience.",
+export const metadata = {
+  title: "Raffily",
+  description: "The Raffle Platform for Customer Retention",
     generator: 'v0.dev'
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans`}>
+      <body>
         {/* Header */}
         <header className="bg-[#0a1638] text-white">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
