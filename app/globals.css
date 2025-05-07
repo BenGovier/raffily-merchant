@@ -49,39 +49,11 @@
   }
 }
 
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 1;
-    transform: scale(1);
+@layer base {
+  * {
+    @apply border-border;
   }
-  50% {
-    opacity: 0.9;
-    transform: scale(1.05);
+  body {
+    @apply bg-background text-foreground;
   }
-}
-
-.animate-pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-/* Custom Raffily colors */
-.bg-raffily-blue {
-  background-color: #0a1638;
-}
-
-.bg-raffily-teal {
-  background-color: #00e1c0;
-}
-
-.text-raffily-blue {
-  color: #0a1638;
-}
-
-.text-raffily-teal {
-  color: #00e1c0;
-}
-
-.hover\:bg-raffily-teal-dark:hover {
-  background-color: #00c5a8;
 }
