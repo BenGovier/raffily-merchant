@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Check, Gift, Mail, ShoppingCart } from "lucide-react"
+import { Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Card } from "@/components/ui/card"
@@ -7,14 +7,8 @@ import { Card } from "@/components/ui/card"
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      {/* Keep existing navigation */}
-
       {/* Hero Section */}
-      <section className="relative w-full overflow-hidden bg-gradient-to-br from-[#110044] to-[#1a0066] py-16 md:py-24">
-        <div className="absolute inset-0 opacity-20">
-          <Image src="/placeholder.svg?key=fz80f" alt="Confetti Background" fill className="object-cover" />
-        </div>
-
+      <section className="relative w-full overflow-hidden bg-[#0a1638] py-16 md:py-24">
         <div className="container relative z-10 mx-auto px-4">
           <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
             <div className="space-y-6">
@@ -28,7 +22,7 @@ export default function Home() {
               <div className="space-y-4">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-[#F471B5] to-[#B878F1] hover:opacity-90 text-white border-0 h-12 px-6 text-base"
+                  className="bg-[#00e1c0] hover:bg-[#00c5a8] text-[#0a1638] border-0 h-12 px-6 text-base font-bold"
                 >
                   <Check className="mr-2 h-5 w-5" /> Start Free – We'll Provide the Prize
                 </Button>
@@ -38,295 +32,37 @@ export default function Home() {
 
             <div className="relative h-[500px] md:h-[600px] flex items-center justify-center">
               <div className="relative w-[280px] md:w-[320px] h-[560px] md:h-[640px] transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                <Image src="/placeholder.svg?key=2xnzg" alt="Raffily Mobile App" fill className="object-contain" />
+                <Image
+                  src="/placeholder.svg?key=ph37k"
+                  alt="Raffily Mobile App"
+                  width={320}
+                  height={640}
+                  className="object-contain"
+                />
               </div>
             </div>
           </div>
         </div>
 
         {/* Countdown Strip */}
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-[#F471B5]/90 to-[#B878F1]/90 py-3 backdrop-blur-sm">
+        <div className="absolute bottom-0 left-0 right-0 bg-[#00e1c0]/90 py-3 backdrop-blur-sm">
           <div className="container mx-auto px-4">
-            <p className="text-center text-white font-medium">
+            <p className="text-center text-[#0a1638] font-medium">
               ⏳ Entries for the £5,000 Mega Prize close in: <span className="font-bold">21 days, 3 hours</span>
             </p>
           </div>
         </div>
       </section>
 
-      {/* Who It's For Section */}
-      <section className="py-16 md:py-24 bg-white">
+      {/* Trusted By Section */}
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Made for Modern Marketers, Founders & CRM Teams</h2>
-            <p className="text-lg text-gray-600">
-              Raffily helps you connect, reward, and retain — no matter your business.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
-            {[
-              {
-                title: "E-commerce & Retail",
-                description: "Turn one-time shoppers into loyal customers.",
-                icon: "shopping bag icon",
-              },
-              {
-                title: "SaaS & Subscription Apps",
-                description: "Boost engagement, reduce churn — automatically.",
-                icon: "recurring subscription icon",
-              },
-              {
-                title: "Financial Services & Applications",
-                description: "Convert more signups with powerful incentives.",
-                icon: "financial growth chart",
-              },
-            ].map((card, index) => (
-              <Card
-                key={index}
-                className="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group"
-              >
-                <div className="h-12 w-12 mb-4 rounded-full bg-gradient-to-r from-[#F471B5]/10 to-[#B878F1]/10 flex items-center justify-center">
-                  <Image
-                    src={`/abstract-geometric-shapes.png?height=48&width=48&query=${card.icon}`}
-                    alt={card.title}
-                    width={24}
-                    height={24}
-                    className="opacity-70 group-hover:opacity-100 transition-opacity"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mb-2">{card.title}</h3>
-                <p className="text-gray-600">{card.description}</p>
-              </Card>
-            ))}
-          </div>
-
-          {/* Brand Logos */}
-          <div className="py-8 border-t border-b border-gray-100">
-            <p className="text-center text-sm text-gray-500 mb-6">Trusted by innovative brands</p>
-            <div className="flex flex-wrap justify-center gap-8 items-center">
-              {[1, 2, 3, 4, 5, 6].map((logo) => (
-                <div key={logo} className="grayscale hover:grayscale-0 transition-all duration-300">
-                  <Image
-                    src="/placeholder-logo.svg"
-                    alt="Partner Logo"
-                    width={120}
-                    height={40}
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Use Case Benefits Section */}
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Drive More Opens. More Clicks. More Loyalty.</h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <Gift className="h-8 w-8 text-[#F471B5]" />,
-                title: "The Ultimate Thank You",
-                description: "Surprise loyal customers with a chance to win — we handle the prize.",
-              },
-              {
-                icon: <Mail className="h-8 w-8 text-[#B878F1]" />,
-                title: "Emails People Want to Open",
-                description: "Attach a high-value prize to your next campaign and see open rates skyrocket.",
-              },
-              {
-                icon: <ShoppingCart className="h-8 w-8 text-[#F471B5]" />,
-                title: "Add Excitement to Any Funnel",
-                description: "Whether it's a sign-up form, application or basket — increase conversion with one click.",
-              },
-            ].map((benefit, index) => (
-              <div
-                key={index}
-                className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100"
-              >
-                <div className="mb-6">{benefit.icon}</div>
-                <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
-                <p className="text-gray-600">{benefit.description}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button className="bg-gradient-to-r from-[#F471B5] to-[#B878F1] hover:opacity-90 text-white border-0">
-              ⚡ Use Raffily's £5,000 prize this month – for free
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works Section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Start Today in Just 3 Steps</h2>
-          </div>
-
-          <div className="flex justify-center mb-12">
-            <div className="inline-flex rounded-md shadow-sm" role="group">
-              <button
-                type="button"
-                className="px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-[#F471B5] to-[#B878F1] rounded-l-lg"
-              >
-                ✅ Use Raffily's Prize
-              </button>
-              <button
-                type="button"
-                className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-r-lg hover:bg-gray-100"
-              >
-                🪙 Bring Your Own Prize
-              </button>
-            </div>
-          </div>
-
-          <div className="relative">
-            {/* Timeline connector */}
-            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#F471B5] to-[#B878F1] hidden md:block transform -translate-x-1/2"></div>
-
-            <div className="space-y-12 relative">
-              {[
-                {
-                  number: "1",
-                  title: "Choose Your Prize",
-                  description: "Use our Mega Prize or upload your own",
-                },
-                {
-                  number: "2",
-                  title: "Share Your Entry Link",
-                  description: "Or plug directly into your app or checkout",
-                },
-                {
-                  number: "3",
-                  title: "Grow With Every Entry",
-                  description: "Get engagement, insights & brand love",
-                },
-              ].map((step, index) => (
-                <div key={index} className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
-                  <div className={`md:w-1/2 ${index % 2 === 1 ? "md:order-2" : ""}`}>
-                    <div className="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow duration-300 border border-gray-100">
-                      <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-                      <p className="text-gray-600">{step.description}</p>
-                    </div>
-                  </div>
-
-                  <div className="relative flex items-center justify-center z-10">
-                    <div className="h-12 w-12 rounded-full bg-gradient-to-r from-[#F471B5] to-[#B878F1] flex items-center justify-center text-white font-bold">
-                      {step.number}
-                    </div>
-                  </div>
-
-                  <div className={`md:w-1/2 ${index % 2 === 1 ? "md:order-1" : ""} hidden md:block`}>
-                    {/* Placeholder for potential illustrations */}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Preview Block */}
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Start Free. Scale When You're Ready.</h2>
-            <p className="text-lg text-gray-600">
-              No long contracts. No setup fees. Flexible options for every business.
-            </p>
-          </div>
-
-          <div className="max-w-md mx-auto">
-            <Card className="border-2 border-[#B878F1] p-8 rounded-xl shadow-lg">
-              <div className="text-center">
-                <h3 className="text-2xl font-bold mb-4">Business Plan</h3>
-                <p className="text-4xl font-bold mb-2">
-                  From £149<span className="text-lg font-normal text-gray-500">/mo</span>
-                </p>
-                <p className="text-gray-600 mb-6">includes a £5,000 customer prize</p>
-
-                <ul className="space-y-3 text-left mb-8">
-                  {[
-                    "Unlimited raffles",
-                    "Full analytics dashboard",
-                    "Custom branding",
-                    "API access",
-                    "Priority support",
-                  ].map((feature, index) => (
-                    <li key={index} className="flex items-start">
-                      <Check className="h-5 w-5 text-[#F471B5] mr-2 flex-shrink-0 mt-0.5" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <Button className="w-full bg-gradient-to-r from-[#F471B5] to-[#B878F1] hover:opacity-90 text-white border-0">
-                  Explore Pricing Plans
-                </Button>
-              </div>
-            </Card>
-
-            <p className="text-center text-sm text-gray-500 mt-4">
-              Prefer pay-as-you-go? Use your own prize for just £0.75 per ticket.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials & Trust Section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Businesses Who Put Their Customers First</h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
-            {[
-              {
-                quote: "We saw 40%+ open rates after using Raffily in our CRM campaigns.",
-                author: "Marketing Director",
-                company: "E-commerce Brand",
-              },
-              {
-                quote: "Zero prize cost and over 1,400 entries in three days — insane ROI.",
-                author: "Growth Lead",
-                company: "SaaS Platform",
-              },
-            ].map((testimonial, index) => (
-              <Card key={index} className="p-6 border border-gray-200 rounded-xl">
-                <div className="flex flex-col h-full">
-                  <div className="mb-4">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <span key={star} className="text-yellow-400">
-                        ★
-                      </span>
-                    ))}
-                  </div>
-                  <p className="text-lg mb-4 flex-grow">"{testimonial.quote}"</p>
-                  <div>
-                    <p className="font-bold">{testimonial.author}</p>
-                    <p className="text-sm text-gray-500">{testimonial.company}</p>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-
-          {/* Partner logos */}
+          <h2 className="text-center text-xl font-bold mb-8">World-class marketing teams trust Raffily</h2>
           <div className="flex flex-wrap justify-center gap-8 items-center">
             {[1, 2, 3, 4, 5, 6].map((logo) => (
               <div key={logo} className="grayscale hover:grayscale-0 transition-all duration-300">
                 <Image
-                  src="/placeholder-logo.svg"
+                  src="/generic-company-logo.png"
                   alt="Partner Logo"
                   width={120}
                   height={40}
@@ -338,8 +74,414 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* Who It's For Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Turn Your Superfans with Free Raffles</h2>
+            <p className="text-lg text-gray-600">
+              Raffily helps you connect, reward, and retain — no matter your business.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-8">
+              {[
+                {
+                  icon: (
+                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#00e1c0] text-white">
+                      1
+                    </div>
+                  ),
+                  title: "Easily Collect Valuable Data",
+                  description:
+                    "Gather insights on customer preferences and behaviors through customized raffle entries.",
+                },
+                {
+                  icon: (
+                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#00e1c0] text-white">
+                      2
+                    </div>
+                  ),
+                  title: "Create More Conversions, Get Growth",
+                  description:
+                    "Increase conversion rates by adding excitement and incentives to your customer journey.",
+                },
+                {
+                  icon: (
+                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#00e1c0] text-white">
+                      3
+                    </div>
+                  ),
+                  title: "Improve Retention, Reduce Churn",
+                  description: "Keep customers engaged and coming back with regular prize opportunities.",
+                },
+              ].map((item, index) => (
+                <div key={index} className="flex gap-4">
+                  <div className="flex-shrink-0 mt-1">{item.icon}</div>
+                  <div>
+                    <h3 className="text-lg font-bold mb-1">{item.title}</h3>
+                    <p className="text-gray-600">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+
+              <Button className="bg-[#00e1c0] hover:bg-[#00c5a8] text-[#0a1638] border-0 font-bold">
+                Get Started for Free
+              </Button>
+            </div>
+
+            <div className="relative h-[500px] flex items-center justify-center">
+              <Image
+                src="/placeholder.svg?key=gyqfr"
+                alt="Raffily Mobile App Interface"
+                width={300}
+                height={500}
+                className="object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
       <section className="py-16 md:py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Powerful Features to Drive Customer Engagement & Growth
+            </h2>
+            <p className="text-lg text-gray-600">
+              Raffily offers a complete toolkit to help you engage customers and drive business growth.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="border border-gray-200 overflow-hidden">
+              <div className="bg-[#ff6b6b] h-2"></div>
+              <div className="p-6">
+                <div className="bg-[#ff6b6b]/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-[#ff6b6b] font-bold text-xl">+34%</span>
+                </div>
+                <h3 className="text-xl font-bold mb-3">Higher Engagement, More Sales</h3>
+                <p className="text-gray-600 mb-4">
+                  Campaigns with raffles see a 34% increase in customer engagement and higher conversion rates.
+                </p>
+                <Button variant="outline" className="text-[#0a1638] hover:bg-[#00e1c0]/10">
+                  Learn More
+                </Button>
+              </div>
+            </Card>
+
+            <Card className="border border-gray-200 overflow-hidden">
+              <div className="bg-[#00e1c0] h-2"></div>
+              <div className="p-6">
+                <div className="bg-[#00e1c0]/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-[#00e1c0] font-bold text-xl">+65%</span>
+                </div>
+                <h3 className="text-xl font-bold mb-3">Turn One-Time Customers Into Loyal Fans</h3>
+                <p className="text-gray-600 mb-4">
+                  65% of customers are more likely to return when offered the chance to win prizes.
+                </p>
+                <Button variant="outline" className="text-[#0a1638] hover:bg-[#00e1c0]/10">
+                  Learn More
+                </Button>
+              </div>
+            </Card>
+
+            <Card className="border border-gray-200 overflow-hidden">
+              <div className="bg-[#845ef7] h-2"></div>
+              <div className="p-6">
+                <div className="bg-[#845ef7]/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-[#845ef7] font-bold">📊</span>
+                </div>
+                <h3 className="text-xl font-bold mb-3">Valuable Customer Insights</h3>
+                <p className="text-gray-600 mb-4">
+                  Collect actionable data on customer preferences and behaviors to inform your marketing strategy.
+                </p>
+                <Button variant="outline" className="text-[#0a1638] hover:bg-[#00e1c0]/10">
+                  Learn More
+                </Button>
+              </div>
+            </Card>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-8">
+            <Card className="border border-gray-200 overflow-hidden">
+              <div className="bg-[#845ef7] h-2"></div>
+              <div className="p-6">
+                <div className="bg-[#845ef7]/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-[#845ef7] font-bold">🔍</span>
+                </div>
+                <h3 className="text-xl font-bold mb-3">Detailed Analytics</h3>
+                <p className="text-gray-600 mb-4">
+                  Track performance with comprehensive analytics and reporting tools.
+                </p>
+                <Button variant="outline" className="text-[#0a1638] hover:bg-[#00e1c0]/10">
+                  Learn More
+                </Button>
+              </div>
+            </Card>
+
+            <Card className="border border-gray-200 overflow-hidden">
+              <div className="bg-[#ff6b6b] h-2"></div>
+              <div className="p-6">
+                <div className="bg-[#ff6b6b]/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-[#ff6b6b] font-bold">📱</span>
+                </div>
+                <h3 className="text-xl font-bold mb-3">Mobile-First, Fully Customizable</h3>
+                <p className="text-gray-600 mb-4">
+                  Create beautiful, branded raffle experiences that work perfectly on any device.
+                </p>
+                <Button variant="outline" className="text-[#0a1638] hover:bg-[#00e1c0]/10">
+                  Learn More
+                </Button>
+              </div>
+            </Card>
+
+            <Card className="border border-gray-200 overflow-hidden">
+              <div className="bg-[#00e1c0] h-2"></div>
+              <div className="p-6">
+                <div className="bg-[#00e1c0]/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-[#00e1c0] font-bold">🔄</span>
+                </div>
+                <h3 className="text-xl font-bold mb-3">Seamless Integrations & APIs</h3>
+                <p className="text-gray-600 mb-4">
+                  Connect Raffily with your existing tools and platforms for a unified workflow.
+                </p>
+                <Button variant="outline" className="text-[#0a1638] hover:bg-[#00e1c0]/10">
+                  Learn More
+                </Button>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Business Solutions Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Find the Perfect Raffle Solution for Your Business</h2>
+            <p className="text-lg text-gray-600">
+              Whether you're a small business or a large enterprise, Raffily has the right solution for you.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            {["Retail & E-commerce", "Financial Services", "SaaS & Technology", "Hospitality & Events"].map(
+              (industry, index) => (
+                <Button key={index} variant="outline" className="text-[#0a1638] hover:bg-[#00e1c0]/10 border-gray-200">
+                  {industry}
+                </Button>
+              ),
+            )}
+          </div>
+
+          <div className="text-center mt-8">
+            <Button className="bg-[#00e1c0] hover:bg-[#00c5a8] text-[#0a1638] border-0 font-bold">
+              Find Your Perfect Solution
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className="py-16 md:py-24 bg-[#0a1638] text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">How Raffily Works: Create, Launch & Grow in Minutes</h2>
+            <p className="text-lg text-white/80">
+              Get started in just a few simple steps and watch your customer engagement soar.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-5 gap-4 mb-12">
+            {[
+              {
+                icon: "🎯",
+                title: "Set Your Goals",
+                description: "Define what you want to achieve with your raffle campaign.",
+              },
+              {
+                icon: "🎁",
+                title: "Choose Prize",
+                description: "Select from our £5,000 Mega Prize or add your own custom prize.",
+              },
+              {
+                icon: "✏️",
+                title: "Customize",
+                description: "Brand your raffle and add custom questions to gather insights.",
+              },
+              {
+                icon: "🚀",
+                title: "Launch",
+                description: "Share your raffle with customers via email, social, or your website.",
+              },
+              {
+                icon: "📈",
+                title: "Analyze & Grow",
+                description: "Track performance and use insights to optimize future campaigns.",
+              },
+            ].map((step, index) => (
+              <div key={index} className="bg-[#0f1f4a] p-4 rounded-lg hover:bg-[#152657] transition-colors">
+                <div className="text-2xl mb-2">{step.icon}</div>
+                <h3 className="text-lg font-bold mb-2">{step.title}</h3>
+                <p className="text-white/70 text-sm">{step.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-[#152657] p-6 rounded-lg max-w-3xl mx-auto">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#00e1c0] text-[#0a1638] font-bold">
+                5
+              </div>
+              <h3 className="text-xl font-bold">Step 5: Use data to drive future success</h3>
+            </div>
+            <p className="text-white/80 mb-4">
+              Leverage the valuable customer data and insights gathered from your raffle to inform your marketing
+              strategy, personalize communications, and drive long-term growth.
+            </p>
+            <Button className="bg-[#00e1c0] hover:bg-[#00c5a8] text-[#0a1638] border-0 font-bold w-full sm:w-auto">
+              Get Started with Raffily
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Solutions for Every Sector */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Solutions for Every Sector</h2>
+            <p className="text-lg text-gray-600">
+              Discover how Raffily can help your specific industry drive engagement and growth.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Retail and E-commerce",
+                image: "/placeholder.svg?key=brwki",
+              },
+              {
+                title: "E-commerce",
+                image: "/placeholder.svg?key=4is5z",
+              },
+              {
+                title: "Financial Services",
+                image: "/financial-services-abstract.png",
+              },
+              {
+                title: "Hospitality",
+                image: "/placeholder.svg?key=0ejkk",
+              },
+              {
+                title: "SaaS Platforms",
+                image: "/placeholder.svg?height=200&width=400&query=software as a service",
+              },
+              {
+                title: "Subscriptions",
+                image: "/placeholder.svg?height=200&width=400&query=subscription service",
+              },
+            ].map((sector, index) => (
+              <div key={index} className="group relative overflow-hidden rounded-lg">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a1638]/80 to-transparent z-10"></div>
+                <Image
+                  src={sector.image || "/placeholder.svg"}
+                  alt={sector.title}
+                  width={400}
+                  height={200}
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-4 z-20">
+                  <h3 className="text-white font-bold mb-2">{sector.title}</h3>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="bg-white/10 text-white border-white/20 hover:bg-white/20"
+                  >
+                    Learn More
+                  </Button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Email Open Rates Section */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Boost Your Email Open Rates with Raffily</h2>
+            <p className="text-lg text-gray-600">
+              Discover how Raffily can significantly improve your email engagement with prize-driven campaigns that get
+              opened, read, and acted upon.
+            </p>
+          </div>
+
+          <div className="text-center mt-8">
+            <Button className="bg-[#00e1c0] hover:bg-[#00c5a8] text-[#0a1638] border-0 font-bold">
+              Improve Your Email Performance
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-16 md:py-24 bg-[#0a1638] text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Industry Leaders</h2>
+            <p className="text-lg text-white/80">
+              See how businesses across industries are achieving remarkable results with Raffily.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                quote: "We saw 40%+ open rates after using Raffily in our CRM campaigns.",
+                author: "Marketing Director",
+                company: "E-commerce Brand",
+              },
+              {
+                quote: "Zero prize cost and over 1,400 entries in three days — insane ROI.",
+                author: "Growth Lead",
+                company: "SaaS Platform",
+              },
+              {
+                quote: "Our customer retention increased by 28% after implementing Raffily's solution.",
+                author: "Customer Success Manager",
+                company: "Subscription Service",
+              },
+            ].map((testimonial, index) => (
+              <div key={index} className="bg-[#152657] p-6 rounded-lg">
+                <div className="flex flex-col h-full">
+                  <div className="mb-4">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <span key={star} className="text-[#00e1c0]">
+                        ★
+                      </span>
+                    ))}
+                  </div>
+                  <p className="text-lg mb-4 flex-grow">"{testimonial.quote}"</p>
+                  <div>
+                    <p className="font-bold">{testimonial.author}</p>
+                    <p className="text-sm text-white/70">{testimonial.company}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
@@ -349,24 +491,29 @@ export default function Home() {
             <Accordion type="single" collapsible className="space-y-4">
               {[
                 {
-                  question: "Can I use my own prize?",
+                  question: "Is Raffily legal? Compliant for my region?",
                   answer:
-                    "Yes! You can use your own prize or take advantage of our £5,000 Mega Prize at no cost to you. Using your own prize gives you more flexibility with a pay-as-you-go pricing model.",
+                    "Yes! Raffily is designed to be fully compliant with promotional and lottery regulations. Our platform includes a free entry option, eliminating any required purchase, which qualifies our raffles as promotional activities, not gambling.",
                 },
                 {
-                  question: "What's included with the Mega Prize?",
+                  question: "What do I get from a raffle?",
                   answer:
-                    "The £5,000 Mega Prize is fully funded by Raffily. It includes prize administration, winner selection, and prize fulfillment. You get all the benefits of offering a high-value prize without any of the costs or administrative burden.",
+                    "With Raffily, you get valuable customer data, increased engagement, and improved retention. Our platform allows you to collect insights on customer preferences and behaviors, which you can use to inform your marketing strategy and personalize communications.",
                 },
                 {
-                  question: "How are winners chosen?",
+                  question: "How do I collect customer data from my raffle entries?",
                   answer:
-                    "Winners are selected randomly using our secure prize draw system. The process is fully transparent and compliant with all relevant regulations. Winners are notified automatically, and you'll receive a notification as well.",
+                    "Raffily makes it easy to collect customer data through customized entry forms. You can add your own questions to gather specific insights relevant to your business. All data is securely stored and easily accessible through our analytics dashboard.",
                 },
                 {
-                  question: "Is it free to start?",
+                  question: "How much does Raffily cost to use?",
                   answer:
-                    "Yes! You can start using Raffily completely free. We offer a generous free tier that includes access to our £5,000 Mega Prize. As your needs grow, you can upgrade to our paid plans for additional features and customization options.",
+                    "Raffily offers flexible pricing options to suit businesses of all sizes. You can start for free with our basic plan, or choose from our premium plans starting at £149/month. We also offer a pay-as-you-go option for businesses that want to use their own prizes.",
+                },
+                {
+                  question: "Can I bring my own raffle prize?",
+                  answer:
+                    "While Raffily offers a £5,000 Mega Prize at no cost to you, you also have the option to use your own prizes. This gives you complete flexibility to tailor your raffles to your specific audience and objectives.",
                 },
               ].map((faq, index) => (
                 <AccordionItem
@@ -381,16 +528,17 @@ export default function Home() {
                 </AccordionItem>
               ))}
             </Accordion>
+
+            <div className="text-center mt-8">
+              <p className="mb-4">Still have questions?</p>
+              <Button className="bg-[#00e1c0] hover:bg-[#00c5a8] text-[#0a1638] border-0 font-bold">Contact Us</Button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 md:py-24 relative overflow-hidden bg-gradient-to-br from-[#110044] to-[#1a0066]">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[url('/placeholder.svg?key=fmlkx')] bg-repeat opacity-20"></div>
-        </div>
-
+      <section className="py-16 md:py-24 relative overflow-hidden bg-[#0a1638]">
         <div className="container relative z-10 mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
@@ -402,15 +550,13 @@ export default function Home() {
 
             <Button
               size="lg"
-              className="bg-gradient-to-r from-[#F471B5] to-[#B878F1] hover:opacity-90 text-white border-0 h-12 px-8 text-base animate-pulse"
+              className="bg-[#00e1c0] hover:bg-[#00c5a8] text-[#0a1638] border-0 h-12 px-8 text-base font-bold"
             >
               🎉 Launch Your Free Raffle Now
             </Button>
           </div>
         </div>
       </section>
-
-      {/* Keep existing footer */}
     </main>
   )
 }
