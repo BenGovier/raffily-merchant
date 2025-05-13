@@ -1,6 +1,6 @@
 import Stripe from "stripe"
 import { connectToDatabase } from "./mongodb"
-import UserModel from "@/models/user"
+import { UserModel } from "@/models/user"
 
 // Initialize Stripe with the secret key
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
