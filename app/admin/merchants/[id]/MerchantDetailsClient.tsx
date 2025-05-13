@@ -14,4 +14,3 @@ export default function MerchantDetailsClient({ id }: { id: string }) {
     </div>
   )
 }
-

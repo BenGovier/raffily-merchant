@@ -55,4 +55,3 @@ export const Icons = {
   fileText: FileText,
   image: Image,
 }
-

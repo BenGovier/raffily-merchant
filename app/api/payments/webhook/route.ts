@@ -151,4 +151,3 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
     console.error("Error processing checkout session:", error)
   }
 }
-

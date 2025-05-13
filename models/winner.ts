@@ -135,4 +135,3 @@ export class WinnerModel {
     return result.modifiedCount > 0
   }
 }
-

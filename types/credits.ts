@@ -24,4 +24,3 @@ export interface CreditTransaction {
   metadata?: Record<string, any>
   createdAt: Date
 }
-

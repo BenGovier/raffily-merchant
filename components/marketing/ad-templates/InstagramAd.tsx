@@ -185,4 +185,3 @@ export default function InstagramAd({ prizeName, brandingData, templateId = "aut
     </div>
   )
 }
-

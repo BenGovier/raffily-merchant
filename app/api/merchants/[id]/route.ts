@@ -98,4 +98,3 @@ async function getDatabase() {
   const { getDatabase } = await import("@/lib/db-init")
   return getDatabase()
 }
-

@@ -195,4 +195,3 @@ const RaffleMongooseModel = mongoose.models.Raffle || mongoose.model<IRaffle>("R
 export default RaffleMongooseModel
 
 // Explicitly export RaffleModel as a named export to fix the deployment error
-

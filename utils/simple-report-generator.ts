@@ -216,4 +216,3 @@ export function generateSimplePPTX(data: SimpleReportData): Promise<Buffer> {
     }
   })
 }
-

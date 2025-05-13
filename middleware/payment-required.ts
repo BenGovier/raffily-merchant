@@ -15,4 +15,3 @@ export function paymentRequiredMiddleware(req: NextRequest) {
   // For now, just proceed
   return NextResponse.next()
 }
-

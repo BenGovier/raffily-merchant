@@ -105,4 +105,3 @@ export const createSetupIntent = async (userId: string) => {
     throw error
   }
 }
-

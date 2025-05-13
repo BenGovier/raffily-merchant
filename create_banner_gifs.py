@@ -17,4 +17,3 @@ def create_gif(size, filename, text):
 create_gif((728, 90), 'leaderboard-728x90.gif', 'Raffily Leaderboard')
 create_gif((300, 250), 'medium-rectangle-300x250.gif', 'Raffily Medium Rectangle')
 create_gif((160, 600), 'wide-skyscraper-160x600.gif', 'Raffily Wide Skyscraper')
-

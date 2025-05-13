@@ -512,4 +512,3 @@ function MetricCard({ title, value, description, trend, trendDirection }) {
     </Card>
   )
 }
-

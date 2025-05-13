@@ -775,4 +775,3 @@ export default function SocialMediaAdGenerator() {
     </div>
   )
 }
-

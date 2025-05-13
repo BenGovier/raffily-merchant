@@ -92,4 +92,3 @@ export async function DELETE(request: Request, { params }: { params: { id: strin
     return NextResponse.json({ success: false, error: "Failed to delete campaign" }, { status: 500 })
   }
 }
-

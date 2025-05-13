@@ -279,4 +279,3 @@ export default function EditBlogPost() {
     </div>
   )
 }
-

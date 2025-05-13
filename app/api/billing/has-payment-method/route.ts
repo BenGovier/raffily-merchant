@@ -49,4 +49,3 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Failed to check payment method" }, { status: 500 })
   }
 }
-

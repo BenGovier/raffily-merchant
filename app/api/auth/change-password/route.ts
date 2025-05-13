@@ -55,4 +55,3 @@ export async function POST(request: NextRequest) {
     return errorResponse("An error occurred while changing password", 500)
   }
 }
-

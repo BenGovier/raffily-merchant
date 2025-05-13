@@ -122,4 +122,3 @@ const raffles = [
     status: "draft",
   },
 ]
-

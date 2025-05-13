@@ -34,4 +34,3 @@ export const removePaymentMethod = async (userId: string): Promise<boolean> => {
 
   return false
 }
-

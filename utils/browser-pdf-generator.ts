@@ -103,4 +103,3 @@ export async function generateBrowserPDF(data: any): Promise<void> {
     alert("Failed to generate PDF report. Please try again.")
   }
 }
-

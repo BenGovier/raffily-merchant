@@ -13,4 +13,3 @@ export function comparePassword(password: string, hashedPassword: string): boole
   const hashedInput = simpleHash(password)
   return hashedInput === hashedPassword
 }
-

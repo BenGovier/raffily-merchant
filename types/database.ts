@@ -46,4 +46,3 @@ export interface Winner {
   claimed: boolean
   claimDate?: Date
 }
-

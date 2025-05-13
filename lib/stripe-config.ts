@@ -178,4 +178,3 @@ export const penceToPounds = (pence: number): number => {
 export const poundsToPence = (pounds: number): number => {
   return Math.round(pounds * 100)
 }
-

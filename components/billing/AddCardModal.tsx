@@ -68,4 +68,3 @@ export function AddCardModal({ isOpen, onClose, onSuccess }: AddCardModalProps) 
     </Dialog>
   )
 }
-

@@ -95,4 +95,3 @@ export function initializeBlogData() {
     localStorage.setItem("blogCategories", JSON.stringify(defaultCategories))
   }
 }
-

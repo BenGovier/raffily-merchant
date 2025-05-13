@@ -35,4 +35,3 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Failed to exchange code for token" }, { status: 500 })
   }
 }
-

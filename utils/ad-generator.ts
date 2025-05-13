@@ -113,4 +113,3 @@ export async function generateAd(props: AdGeneratorProps): Promise<Buffer> {
 
   return buffer
 }
-

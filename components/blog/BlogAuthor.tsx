@@ -50,4 +50,3 @@ export default function BlogAuthor({ author }: AuthorProps) {
     </div>
   )
 }
-

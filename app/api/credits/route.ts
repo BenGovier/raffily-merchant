@@ -70,4 +70,3 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: false, error: "Failed to add credits" }, { status: 500 })
   }
 }
-

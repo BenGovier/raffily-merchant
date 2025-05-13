@@ -5,4 +5,3 @@ export async function GET() {
   const authUrl = getAuthorizationUrl()
   return NextResponse.redirect(authUrl)
 }
-

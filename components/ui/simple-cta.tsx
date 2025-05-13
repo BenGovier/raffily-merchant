@@ -11,4 +11,3 @@ export default function SimpleCTA({ href, children }: { href: string; children: 
     </Link>
   )
 }
-

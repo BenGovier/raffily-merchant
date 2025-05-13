@@ -31,4 +31,3 @@ This animated GIF banner showcases:
   4. "Compliance Guaranteed"
 - Animated arrow pointing to "Get Started" button
 - Geometric pattern background animation
-

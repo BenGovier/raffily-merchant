@@ -59,4 +59,3 @@ export const getCompliantSenderTypes = async (countryCode = "GB") => {
     return null
   }
 }
-

@@ -12,4 +12,3 @@ export function SimpleCTA({ children, href, className = "" }) {
     </Button>
   )
 }
-

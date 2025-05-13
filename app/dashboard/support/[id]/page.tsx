@@ -329,4 +329,3 @@ export default function TicketDetailPage({ params }: { params: { id: string } })
     </div>
   )
 }
-

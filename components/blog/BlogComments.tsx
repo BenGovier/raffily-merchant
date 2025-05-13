@@ -128,4 +128,3 @@ export default function BlogComments({ postSlug }: { postSlug: string }) {
     </div>
   )
 }
-

@@ -6,4 +6,3 @@ export async function POST(request: Request) {
   // Handle booking logic here
   return NextResponse.json({ success: true })
 }
-

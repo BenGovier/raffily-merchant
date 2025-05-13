@@ -295,4 +295,3 @@ export default function TwitterAd({ prizeName, brandingData, templateId = "auto"
     </div>
   )
 }
-

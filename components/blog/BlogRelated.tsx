@@ -81,4 +81,3 @@ export default function BlogRelated({ currentPostId }: { currentPostId: number |
     </div>
   )
 }
-

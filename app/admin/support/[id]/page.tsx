@@ -366,4 +366,3 @@ export default function AdminTicketDetailPage({ params }: { params: { id: string
     </div>
   )
 }
-

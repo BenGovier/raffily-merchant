@@ -261,4 +261,3 @@ class DatabaseService {
 }
 
 export default DatabaseService.getInstance()
-

@@ -213,4 +213,3 @@ export function SimplePaymentForm({ userId, onSuccess, onError }: SimplePaymentF
     </Card>
   )
 }
-

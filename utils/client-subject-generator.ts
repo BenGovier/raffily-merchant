@@ -37,4 +37,3 @@ function shuffleArray<T>(array: T[]): T[] {
   }
   return newArray
 }
-

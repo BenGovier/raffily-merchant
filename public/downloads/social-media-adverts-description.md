@@ -37,4 +37,3 @@ This pack of PNG files includes:
   3. "Compliant Raffle Solutions for Every Industry"
 
 Headers feature Raffily logo, brand colors, and subtle geometric patterns.
-

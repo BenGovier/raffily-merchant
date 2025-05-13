@@ -93,4 +93,3 @@ export function generateClientPDF(data: any): void {
     alert("Failed to generate PDF report. Please try again.")
   }
 }
-

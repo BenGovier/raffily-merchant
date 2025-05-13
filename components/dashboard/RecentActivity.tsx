@@ -54,4 +54,3 @@ const activities = [
     avatar: "/placeholder.svg?height=32&width=32",
   },
 ]
-

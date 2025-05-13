@@ -108,4 +108,3 @@ export async function DELETE(request: NextRequest, { params }: { params: { id: s
     return errorResponse("Failed to delete entry", 500)
   }
 }
-

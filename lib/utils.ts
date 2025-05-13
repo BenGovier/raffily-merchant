@@ -19,4 +19,3 @@ export const formatDate = (date: Date): string => {
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
-

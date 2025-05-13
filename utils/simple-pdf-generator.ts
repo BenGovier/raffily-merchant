@@ -97,4 +97,3 @@ export async function generateSimplePDF(data: any): Promise<void> {
     alert("Failed to generate PDF report. Please try again.")
   }
 }
-

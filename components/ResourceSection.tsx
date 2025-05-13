@@ -51,4 +51,3 @@ export default function ResourceSection({ id, title, description, resources }: R
     </section>
   )
 }
-

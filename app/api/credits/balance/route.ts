@@ -22,4 +22,3 @@ export async function GET(request: Request) {
     return NextResponse.json({ success: false, error: "Failed to fetch credit balance" }, { status: 500 })
   }
 }
-

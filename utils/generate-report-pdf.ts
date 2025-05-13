@@ -325,4 +325,3 @@ export function generateReportPDF(data: ReportData): Uint8Array {
   // Return the PDF as a buffer
   return doc.output("arraybuffer")
 }
-

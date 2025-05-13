@@ -232,4 +232,3 @@ export function RafflesList({ status }: RafflesListProps) {
     </div>
   )
 }
-

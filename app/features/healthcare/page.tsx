@@ -148,4 +148,3 @@ export default function HealthcareFeaturePage() {
     </main>
   )
 }
-

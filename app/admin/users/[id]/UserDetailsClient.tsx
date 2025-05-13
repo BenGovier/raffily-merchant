@@ -14,4 +14,3 @@ export default function UserDetailsClient({ id }: { id: string }) {
     </div>
   )
 }
-

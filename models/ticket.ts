@@ -52,4 +52,3 @@ const TicketSchema = new Schema(
 )
 
 export default mongoose.models.Ticket || mongoose.model<ITicket>("Ticket", TicketSchema)
-

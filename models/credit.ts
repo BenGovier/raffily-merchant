@@ -125,4 +125,3 @@ export class CreditModel {
       .toArray() as Promise<Credit[]>
   }
 }
-

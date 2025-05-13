@@ -41,4 +41,3 @@ export function EntriesChart() {
     </ResponsiveContainer>
   )
 }
-

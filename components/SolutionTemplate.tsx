@@ -190,4 +190,3 @@ function StatCard({ icon: Icon, value, label, description }) {
     </motion.div>
   )
 }
-

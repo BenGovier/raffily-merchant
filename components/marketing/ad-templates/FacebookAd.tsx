@@ -341,4 +341,3 @@ export default function FacebookAd({ prizeName, brandingData, templateId = "auto
     </div>
   )
 }
-

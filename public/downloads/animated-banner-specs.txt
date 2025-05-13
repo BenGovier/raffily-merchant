@@ -26,4 +26,3 @@ All banners should use Raffily brand colors:
 - Secondary: #FF4D8D
 
 Ensure all text is legible and animations are smooth. Include a clear call-to-action in each banner.
-

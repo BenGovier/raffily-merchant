@@ -954,4 +954,3 @@ export default function SMSMarketingPage() {
     </div>
   )
 }
-

@@ -250,4 +250,3 @@ export async function POST(request: NextRequest) {
     return errorResponse("Failed to select winners", 500)
   }
 }
-

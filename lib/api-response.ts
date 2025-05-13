@@ -30,4 +30,3 @@ export function unauthorizedResponse(message = "Unauthorized") {
 export function forbiddenResponse(message = "Forbidden") {
   return errorResponse(message, 403)
 }
-

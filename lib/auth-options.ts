@@ -69,4 +69,3 @@ export const authOptions: NextAuthOptions = {
     error: "/auth/error",
   },
 }
-

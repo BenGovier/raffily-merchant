@@ -53,4 +53,3 @@ export async function refreshAccessToken(refreshToken: string) {
 
   return response.json()
 }
-

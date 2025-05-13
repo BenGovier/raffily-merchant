@@ -279,4 +279,3 @@ async function generateStaticPPTX(data: any): Promise<Buffer> {
     throw new Error(`PowerPoint generation failed: ${error.message}`)
   }
 }
-

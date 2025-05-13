@@ -53,4 +53,3 @@ testConnection()
     console.error("Unexpected error:", err)
     process.exit(1)
   })
-

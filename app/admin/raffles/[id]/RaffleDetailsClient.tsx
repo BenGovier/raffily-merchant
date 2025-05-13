@@ -291,4 +291,3 @@ export default function RaffleDetailsClient({ params }: { params: { id: string }
     </div>
   )
 }
-

@@ -412,4 +412,3 @@ export default function RaffleEntriesPage({ params }: { params: { id: string } }
     </div>
   )
 }
-

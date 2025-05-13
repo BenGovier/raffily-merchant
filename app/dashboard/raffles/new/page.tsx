@@ -1160,4 +1160,3 @@ export default function CreateRaffle() {
     </div>
   )
 }
-
